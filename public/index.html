@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="style.css">
+    <title>CareerDevs Grads</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <form onSubmit="addGrad(event)">
+            <input type="text" placeholder="Enter Grad" id="name">
+            <input type="text" placeholder="Enter Role" id="role">
+            <input type="text" placeholder="Enter Company" id="company">
+            <input type="date" placeholder="Enter Date of Graduation" id="yearOfGraduation">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+        </form>
+
+        <button id="showAllGrads" class="btn waves-effect waves-light">Show All Graduates</button>
+        <button class="btn waves-effect waves-danger">Delete Graduates</button>
+
+    </div>
+    <div id="results">
+    <ul id="list">
+    </ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
